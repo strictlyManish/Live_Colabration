@@ -6,7 +6,7 @@ import * as Y from "yjs";
 import { SocketIOProvider } from "y-socket.io";
 import { MonacoBinding } from "y-monaco";
 
-const SERVER_URL = "http://localhost:3000";
+const SERVER_URL = "/";
 const ROOM_NAME = "monaco-demo-room";
 
 function App() {
@@ -94,7 +94,7 @@ function App() {
               {errors.username && <p className="text-red-500 text-xs mt-1">{errors.username.message}</p>}
             </div>
             <button className="w-full bg-blue-600 hover:bg-blue-700 py-3 rounded-lg font-semibold transition-colors">
-              Join Session
+              Join Colab
             </button>
           </form>
         </div>
